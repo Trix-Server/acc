@@ -11,5 +11,5 @@ console.log(`لا تنسا الاششتراك `)
 
 
 
-client.login(process.env.TOKEN);// لا تغير فيها شيء
-client2.login(process.env.TOKEN2);// لا تغير فيها شيء
+client.login("NDYyNDM0NjAzODk1MDk1Mjk3.DtCtDw.fOQjdUmhtm5-ShsLP6r6Xm_L83k");// لا تغير فيها شيء
+client2.login("MzQ4OTUzMTQwMzE1MjkxNjQ5.Dp998A.6tT2KKXRZ3EItpO9DRafk1g56Qc");// لا تغير فيها شيء
