@@ -313,25 +313,23 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '&help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (&)**')
         .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
         .addField('skip', 'تخطي الأغنية')
         .addField('pause', 'ايقاف الاغنية مؤقتا')
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .setFooter('(&general_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
 
 client.on('message', message => {
-    if (message.content === 'general_commands') {
+    if (message.content === '&general_commands') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
         .addField('avatar', "افاتار الشخص المطلوب")
@@ -349,7 +347,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`&play | Last Music`,"http://twitch.tv/Death Shop")
+client.user.setGame(`&play |&help| Last Music`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
