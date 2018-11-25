@@ -680,8 +680,8 @@ client2.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`&play| help | Last Music`,"http://twitch.tv/Death Shop")
-client.user.setStatus("dnd")
+client2.user.setGame(`&play| help | Last Music`,"http://twitch.tv/Death Shop")
+client2.user.setStatus("dnd")
 });
 //---------------------------------------------------------------------
 client.login(process.env.BOT_TOKEN);
