@@ -86,6 +86,13 @@ client.on('message', async msg =>{
 /////////////////////////
 ////////////////////////
 //////////////////////
+client.on('guildCreate', guild => {
+  var embed = new Discord.RichEmbed()
+  .setColor(0x5500ff)
+  .setDescription(`**شكراً لك لإضافه البوت الى سيرفرك**`)
+      guild.owner.send(embed)
+});
+
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -347,7 +354,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`&play |&help| Last Music`,"http://twitch.tv/Death Shop")
+client.user.setGame(`&play |&help|BY ~ Unknown ~Tag~ #4403|`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
